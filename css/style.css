@@ -54,6 +54,14 @@ header {
     color: #FFFFFF;
 }
 
+.menu a:hover {
+    color: #1FBAD6;
+}
+
+menu a:active {
+    color: #999999;
+}
+
 .menu_link:hover {
     text-decoration: none;
     color: #1eacc7;
@@ -520,7 +528,7 @@ footer {
 }
 
 .rus a:hover {
-    color: #11647d;
+    color: #070716;
 }
 
 .icon {
@@ -819,6 +827,9 @@ footer .noinbig {
     }
     header nav {
         height: 32px;
+    }
+    .menu {
+        width: 85%;
     }
     .subheader {
         top: 30px;
