@@ -54,6 +54,11 @@ header {
     color: #FFFFFF;
 }
 
+.menu_link:hover {
+    text-decoration: none;
+    color: #1eacc7;
+}
+
 .subheader {
     position: absolute;
     top: 50px;
@@ -94,10 +99,14 @@ header {
     color: #FFFFFF;
 }
 
+.phone_link:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
 .button {
     display: block;
-    margin: 19px 0;
-    right: 0;
+    margin-top: 19px;
     width: 172px;
     height: 46px;
     background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
@@ -108,6 +117,15 @@ header {
     text-transform: uppercase;
     color: #FFFFFF;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+}
+
+.button:hover {
+    background-image: none;
+    background-color: #1eacc7;
+}
+
+.button:focus-visible {
+    outline: none;
 }
 
 .hamburger {
@@ -154,6 +172,15 @@ header {
     text-transform: uppercase;
     color: #FFFFFF;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+}
+
+.promo_button:hover {
+    background-image: none;
+    background-color: #1eacc7;
+}
+
+.promo_button:focus {
+    outline: none;
 }
 
 .promo_text {
@@ -422,6 +449,11 @@ header {
     text-decoration: none;
 }
 
+.city:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
 .link_a a {
     display: block;
     margin: 500px 0 21px 0;
@@ -450,6 +482,10 @@ footer {
     color: #070716;
 }
 
+.link_footer a:hover {
+    color: #999999;
+}
+
 .centre_footer {
     font-weight: 300;
     font-size: 11px;
@@ -459,6 +495,10 @@ footer {
 
 .centre_footer a {
     color: #999999;
+}
+
+.centre_footer a:hover {
+    color: #070716;
 }
 
 .centre .menu_centre {
@@ -477,6 +517,10 @@ footer {
     text-align: center;
     text-transform: uppercase;
     color: #1FBAD6;
+}
+
+.rus a:hover {
+    color: #11647d;
 }
 
 .icon {
@@ -518,6 +562,10 @@ footer .noinbig {
     display: none;
 }
 
+.space {
+    display: none;
+}
+
 @media (max-width: 1200px) {
     .menu_items {
         padding-right: 16px;
@@ -543,6 +591,11 @@ footer .noinbig {
 }
 
 @media (max-width: 991px) {
+    .button {
+        margin-top: 21px;
+        height: 40px;
+        width: 100%;
+    }
     .menu_items {
         padding-right: 8px;
     }
@@ -590,9 +643,9 @@ footer .noinbig {
         height: 400px;
         margin: 25px auto;
     }
-    .xs-hidden {
+    /* .xs-hidden {
         display: block;
-    }
+    } */
     footer .noinbig {
         display: flex;
         justify-content: center;
@@ -613,6 +666,18 @@ footer .noinbig {
 }
 
 @media (max-width: 767px) {
+    .subheader {
+        position: relative;
+    }
+    .button {
+        display: block;
+        position: absolute;
+        right: 0;
+        margin: 0;
+        margin-right: 15px;
+        width: 200px;
+        height: 40px;
+    }
     .promo_h1 {
         font-size: 40px;
     }
@@ -646,6 +711,15 @@ footer .noinbig {
     }
     .menu a {
         font-size: 20px;
+    }
+    .phone_link {
+        display: block;
+        margin-top: 10px;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
     }
     .hamburger {
         display: block;
@@ -682,6 +756,9 @@ footer .noinbig {
     .subheader .xs-visible {
         display: block;
     }
+    .subheader_logo img {
+        width: 100%;
+    }
     .square {
         width: 100%;
         height: 200px;
@@ -692,9 +769,6 @@ footer .noinbig {
     }
     .reasons_block {
         margin-right: 0;
-    }
-    .button {
-        margin: 5px 70px;
     }
     .reasons .reasons_cool {
         width: 100%;
@@ -737,4 +811,132 @@ footer .noinbig {
     .portret img {
         margin-top: 30px;
     }*/
+}
+
+@media (max-width: 575px) {
+    header {
+        height: 32px;
+    }
+    header nav {
+        height: 32px;
+    }
+    .subheader {
+        top: 30px;
+        min-height: 60px;
+    }
+    .button {
+        width: 110px;
+        height: 22px;
+        font-size: 10px;
+        margin-top: 4px;
+        padding: 0;
+    }
+    .button {
+        background-image: -webkit-gradient(linear, left bottom, left top, from(#1eacc7), to(#4ce2ff));
+        background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+    }
+    .promo {
+        min-height: 400px;
+        padding: 73px 0 35px;
+    }
+    .promo_h1 {
+        font-size: 30px;
+    }
+    .promo_h2 {
+        font-size: 20px;
+    }
+    .promo_text {
+        display: none;
+    }
+    .promo_button {
+        width: 189px;
+        height: 50px;
+        margin-top: 80px;
+        font-size: 16px;
+    }
+    .subheader_logo img {
+        width: 130px;
+        height: 15px;
+    }
+    .subheader .phone_xs {
+        margin-top: 8px;
+        font-size: 12px;
+    }
+    .logo_text {
+        display: none;
+    }
+    .phone_link {
+        font-weight: normal;
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+    .title {
+        font-size: 16px;
+    }
+    .subtitle {
+        font-size: 14px;
+    }
+    .square {
+        height: 230px;
+        padding-top: 60px;
+    }
+    .square_text {
+        font-size: 16px;
+    }
+    .choice {
+        min-height: 415px;
+        padding: 0;
+    }
+    .choice .black {
+        height: 100%;
+    }
+    .avto img {
+        width: 300px;
+        height: 190px;
+    }
+    .cars_xs {
+        display: block;
+        color: #FFFFFF;
+        width: 260px;
+        margin-bottom: 20px;
+    }
+    .choice .label {
+        margin-top: 20px;
+    }
+    .black .subtitle {
+        display: none;
+    }
+    .night {
+        min-height: 360px;
+        padding: 20px 0 8px 0;
+    }
+    footer {
+        padding: 0 10px 30px 10px;
+    }
+    .menubot .menubottom {
+        width: 300px;
+    }
+    .centre .menu_centre {
+        flex-wrap: wrap;
+        justify-content: center;
+        -webkit-box-pack: center;
+        width: 300px;
+    }
+    .centre .menu_centre a {
+        margin: 0 7px;
+    }
+    .icon {
+        margin: 0;
+    }
+    .link_a a {
+        margin-top: 180px;
+    }
+    .space {
+        display: block;
+        margin: 0 auto;
+        margin-top: 30px;
+        width: 255px;
+        height: 6px;
+        background: #1FBAD6;
+    }
 }
