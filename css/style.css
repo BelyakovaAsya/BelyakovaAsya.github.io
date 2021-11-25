@@ -743,7 +743,7 @@ footer .noinbig {
         height: 2px;
         width: 100%;
         background-color: #FFFFFF;
-        margin-bottom: 4px;
+        margin-bottom: 3px;
         transition: 0.5s all;
     }
     .hamburger_active span {
