@@ -16,7 +16,7 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-$(function($) {
+$(function() {
     $('html, body').scrollTop($(document).height());
 
     $("#scroll-top > button").on("click", function(e) {
