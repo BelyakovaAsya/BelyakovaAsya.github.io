@@ -17,12 +17,21 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 $(function() {
-    $('html, body').scrollTop($(document).height());
+    // $('html, body').scrollTop($(document).height());
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 1600) {
+            $('#scroll-top ').fadeIn();
+        } else {
+            $('#scroll-top ').fadeOut();
+        }
+    });
 
     $("#scroll-top > button").on("click", function(e) {
         var body = $("html, body");
         body.stop().animate({ scrollTop: 0 }, 500, "swing");
     });
+
+
 
     $('input[name=phone]').mask("+7(999) 999-99-99");
 
