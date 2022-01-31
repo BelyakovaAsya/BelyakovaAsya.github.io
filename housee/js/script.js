@@ -4,31 +4,32 @@ window.addEventListener('DOMContentLoaded', () => {
         hamburger = document.querySelector('.hamburger');
 
     hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('hamburger_active');
+        hamburger.classList.toggle('hamburger_active', );
         menu.classList.toggle('menu_active');
     });
 
     menuItem.forEach(item => {
         item.addEventListener('click', () => {
-            hamburger.classList.toggle('hamburger_active');
+            hamburger.classList.toggle('hamburger_active', 'body');
             menu.classList.toggle('menu_active');
         });
     });
 });
 
 $(function() {
-    // $('html, body').scrollTop($(document).height());
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 1600) {
-            $('#scroll-top ').fadeIn();
-        } else {
-            $('#scroll-top ').fadeOut();
-        }
-    });
+    $('html, body').scrollTop($(document).height());
+
+    // $(window).scroll(function() {
+    //     if ($(this).scrollTop() > 1600) {
+    //         $('#scroll-top ').fadeIn();
+    //     } else {
+    //         $('#scroll-top ').fadeOut();
+    //     }
+    // });
 
     $("#scroll-top > button").on("click", function(e) {
         var body = $("html, body");
-        body.stop().animate({ scrollTop: 0 }, 500, "swing");
+        body.stop().animate({ scrollTop: 0 }, 600, "swing");
     });
 
 
