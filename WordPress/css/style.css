@@ -290,6 +290,7 @@ h2.title {
     align-items: center;
     text-align: center;
     color: #252525;
+    margin: 0 auto;
 }
 
 .present .present_btn {
@@ -405,6 +406,13 @@ h2.title {
     .promo .promo_text {
         font-size: 21px;
     }
+    .optimization .optimization_img {
+        position: absolute;
+        top: 14px;
+    }
+    .present .present_text {
+        width: 100%;
+    }
 }
 
 @media (max-width: 992px) {
@@ -416,5 +424,182 @@ h2.title {
     }
     .promo .promo_text {
         font-size: 18px;
+    }
+    .present .present_text {
+        font-size: 25px;
+    }
+    .optimization {
+        min-height: 550px;
+        padding: 62px 0 67px 0;
+    }
+    .optimization .optimization_header {
+        font-size: 24px;
+        margin-left: 285px;
+    }
+    .optimization .optimization_text {
+        font-size: 16px;
+        line-height: 22px;
+        margin-left: 285px;
+    }
+    .optimization .optimization_img {
+        top: -28px;
+        left: -280px;
+    }
+}
+
+@media (max-width: 768px) {
+    .present .present_text {
+        font-size: 19px;
+    }
+    .optimization .optimization_header {
+        font-size: 24px;
+        margin-left: 155px;
+    }
+    .optimization .optimization_text {
+        font-size: 15px;
+        line-height: 22px;
+        margin-left: 155px;
+    }
+    .optimization .optimization_img {
+        top: -8px;
+        left: -390px;
+    }
+}
+
+@media (max-width: 567px) {
+    .container {
+        padding: 0 8px;
+    }
+    .promo {
+        padding: 10px 0;
+        height: auto;
+    }
+    .title {
+        font-size: 22px;
+    }
+    h1.title {
+        margin-top: 20px;
+    }
+    h2.title {
+        margin-top: 20px;
+    }
+    .simple .title_big {
+        font-size: 32px;
+    }
+    .promo .promo_text {
+        font-size: 14px;
+    }
+    .promo .promo_btn {
+        width: 234px;
+        height: 58px;
+        font-size: 15px;
+        margin: 40px auto;
+    }
+    .waiting {
+        padding: 40px 0;
+    }
+    .waiting .waiting_wrapper {
+        flex-direction: column;
+    }
+    .waiting .waiting_wrapper .waiting_item {
+        width: 100%;
+    }
+    .waiting .waiting_wrapper .waiting_item .waiting_img {
+        width: 138px;
+        height: 80px;
+    }
+    .waiting .waiting_sub {
+        font-size: 21px;
+    }
+    .waiting .waiting_wrapper .waiting_item .waiting_descrb {
+        margin: 22px auto;
+        font-size: 13px;
+    }
+    .waiting .waiting_header {
+        font-size: 27px;
+    }
+    .finish .finish_header {
+        font-size: 26px;
+    }
+    .finish .finish_wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .optimization {
+        padding: 30px 0;
+        display: block;
+        position: relative;
+    }
+    .optimization::after {
+        content: "";
+        background: url('../img/woman_bg.jpg') no-repeat;
+        opacity: 0.4;
+        top: 85px;
+        left: -140px;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    }
+    .optimization .optimization_img {
+        display: none;
+    }
+    .optimization .optimization_header {
+        width: 100%;
+        margin: 0;
+        padding: 0 5px;
+    }
+    .optimization .optimization_text {
+        width: 100%;
+        margin: 15px 0;
+        padding: 0 5px;
+    }
+    .finish {
+        padding: 40px 0;
+    }
+    .finish .finish_wrapper .finish_round {
+        width: 101px;
+        height: 101px;
+    }
+    .finish .finish_wrapper .finish_items {
+        width: 90%;
+    }
+    .finish .finish_wrapper .finish_descrb {
+        font-size: 16px;
+        margin: 10px 0 32px 0;
+    }
+    .present {
+        height: 500px;
+        padding: 40px 0 0 0;
+    }
+    .present .present_text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .present .present_btn {
+        width: 234px;
+        height: 58px;
+        font-size: 15px;
+    }
+    .present .present_img {
+        height: 100px;
+        width: 78px;
+    }
+    .first {
+        height: 555px;
+        padding: 40px 0;
+    }
+    .first .end_text {
+        font-size: 21px;
+    }
+    .first .data_text {
+        font-size: 31px;
+    }
+    .first .end_img {
+        padding: 0 15px;
+        width: 100%;
+    }
+    .phone {
+        margin-top: 20px;
     }
 }
