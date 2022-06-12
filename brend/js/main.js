@@ -1,17 +1,7 @@
 $(function() {
 
-    $('.header__btn').on('click', function() {
-        $('.rightside-menu').removeClass('rightside-menu--close');
-    });
-    $('.rightside-menu__close').on('click', function() {
-        $('.rightside-menu').addClass('rightside-menu--close');
-    });
-
     $('.header__btn-menu').on('click', function() {
         $('.menu').toggleClass('menu--open');
-    });
-    $('.rightside-menu__close').on('click', function() {
-        $('.rightside-menu').addClass('rightside-menu--close');
     });
 
     $('.top__slider').slick({
@@ -21,52 +11,45 @@ $(function() {
         autoplay: true
     });
     $('.contact-slider').slick({
-        slidesToShow: 10,
-        slidesToScroll: 10,
+        slidesToShow: 8,
+        slidesToScroll: 8,
         dots: true,
         arrows: false,
         responsive: [{
-                breakpoint: 1700,
+                breakpoint: 1511,
                 settings: {
-                    slidesToShow: 8,
-                    slidesToScroll: 8
+                    slidesToShow: 7,
+                    slidesToScroll: 7
                 }
             },
             {
-                breakpoint: 1511,
+                breakpoint: 1201,
                 settings: {
                     slidesToShow: 6,
                     slidesToScroll: 6
                 }
             },
             {
-                breakpoint: 1201,
+                breakpoint: 841,
                 settings: {
                     slidesToShow: 4,
                     slidesToScroll: 4
                 }
             },
             {
-                breakpoint: 841,
+                breakpoint: 551,
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 3
                 }
             },
             {
-                breakpoint: 551,
+                breakpoint: 426,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2
                 }
             },
-            {
-                breakpoint: 376,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
         ]
     });
     $('.article-slider__box').slick({
