@@ -1,0 +1,337 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+        padding: 0 10px;
+    }
+}
+
+.about__block {
+    img {
+        width: 60px;
+        height: 60px;
+    }
+    &-text {
+        width: 180px;
+    }
+}
+
+.contacts {
+    padding-top: 80px;
+    &__blocks {
+        display: grid;
+        grid-template: repeat(2, 135px) / 540px;
+        gap: 50px;
+        justify-content: center;
+    }
+}
+
+.flat {
+    &__blocks {
+        grid-template: repeat(2, 280px) / repeat(2, 450px);
+    }
+}
+
+.maps {
+    &__block {
+        iframe {
+            width: 900px;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
+
+.forma {
+    min-height: 320px;
+    padding-top: 15px;
+    &__form {
+        grid-template: repeat(2, 50px) / repeat(2, 255px);
+        gap: 40px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .headers {
+        min-height: 700px;
+    }
+    .header {
+        &__address {
+            margin: 110px auto;
+        }
+        &__mouse {
+            img {
+                margin-top: 100px;
+            }
+        }
+        &__center {
+            margin-top: 80px;
+        }
+    }
+    .about {
+        min-height: 300px;
+        &__blocks {
+            width: 500px;
+        }
+        &__block {
+            &-text {
+                width: 160px;
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+    }
+    .flat {
+        min-height: 550px;
+        &__blocks {
+            margin-top: 40px;
+            grid-template: repeat(2, 200px) / repeat(2, 330px);
+            gap: 20px;
+        }
+        &__block {
+            &-text {
+                bottom: 25px;
+                font-size: 18px;
+            }
+        }
+    }
+    .maps {
+        &__block {
+            iframe {
+                width: 660px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .up {
+        display: none;
+    }
+    .container {
+        max-width: 540px;
+    }
+    .headers {
+        padding: 10px 0;
+    }
+    .menu {
+        position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        top: 0;
+        left: -100%;
+        width: 50%;
+        height: 100vh;
+        padding: 20px 15px;
+        background-color: rgba($color: #000000, $alpha: 0.8);
+        transition: 0.6s all;
+        z-index: 2;
+        &_active {
+            left: 0;
+        }
+        &_items {
+            padding-right: 0;
+            border: none;
+            margin-top: 15px;
+        }
+        &_link {
+            font-size: 22px;
+        }
+    }
+    .hamburger {
+        display: block;
+        position: fixed;
+        transform: translateY(-50%);
+        width: 26px;
+        height: 12px;
+        right: 30px;
+        top: 42px;
+        z-index: 5;
+        span {
+            display: block;
+            height: 2px;
+            width: 100%;
+            background-color: #FFFFFF;
+            margin-bottom: 4px;
+            transition: 0.5s all;
+        }
+    }
+    .hamburger_active span {
+        margin-bottom: -2px;
+    }
+    .hamburger_active span:nth-child(1) {
+        transform: translateY(3px) rotate(-45deg);
+    }
+    .hamburger_active span:nth-child(2) {
+        display: none;
+    }
+    .hamburger_active span:nth-child(3) {
+        transform: translateY(3px) rotate(45deg);
+    }
+    .header {
+        &__address {
+            margin: 150px auto;
+        }
+        &__center {
+            width: 450px;
+            &-title {
+                font-size: 40px;
+            }
+        }
+    }
+    .about {
+        &__blocks {
+            width: 520px;
+        }
+        &__block {
+            &-text {
+                width: 130px;
+                font-size: 16px;
+            }
+        }
+    }
+    .flat {
+        min-height: 1200px;
+        &__blocks {
+            grid-template: repeat(4, 240px) / 400px;
+        }
+        &__block {
+            &-text {
+                bottom: 25px;
+                font-size: 18px;
+            }
+        }
+    }
+    .maps {
+        &__block {
+            iframe {
+                width: 500px;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 10px;
+    }
+    .hamburger {
+        right: 15px;
+        top: 25px;
+    }
+    .header {
+        min-height: 100vh;
+        &__mouse {
+            img {
+                margin-top: 170px;
+            }
+        }
+        &__address {
+            flex-direction: column;
+            margin: 80px auto;
+            gap: 30px;
+            align-items: center;
+            justify-content: center;
+            width: 290px;
+        }
+        &__center {
+            width: 290px;
+            margin-top: 50px;
+            &-title {
+                font-size: 32px;
+            }
+        }
+    }
+    .about {
+        &__blocks {
+            flex-wrap: wrap;
+            width: 290px;
+        }
+        &__block {
+            &-text {
+                width: 145px;
+                font-size: 14px;
+            }
+            &-up {
+                margin-top: 20px;
+            }
+        }
+    }
+    .flat {
+        min-height: 920px;
+        &__blocks {
+            grid-template: repeat(4, 180px) / 270px;
+        }
+        &__block {
+            &-text {
+                bottom: 25px;
+                font-size: 18px;
+            }
+        }
+    }
+    .title {
+        font-size: 30px;
+        margin-bottom: 45px;
+        margin-top: 15px;
+    }
+    .contacts {
+        min-height: 740px;
+        padding-top: 20px;
+        &__blocks {
+            grid-template: repeat(2, auto) / 290px;
+        }
+        &__form {
+            grid-template: repeat(4, 45px) / 200px;
+            justify-content: center;
+        }
+    }
+    .video {
+        min-height: 400px;
+    }
+    .maps {
+        min-height: 530px;
+        &__block {
+            iframe {
+                width: 290px;
+            }
+        }
+    }
+    .forma {
+        min-height: 440px;
+        &__form {
+            grid-template: repeat(4, 45px) / 200px;
+            gap: 30px;
+        }
+    }
+    footer {
+        padding: 0;
+        .footer__blocks {
+            display: none;
+            &-nav {
+                display: none;
+            }
+            &-address {
+                margin: 0 auto;
+            }
+            &-addr {
+                margin-top: 25px;
+            }
+            &-social {
+                margin-top: 30px;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+    .menu {
+        &_link {
+            font-size: 14px;
+        }
+    }
+}

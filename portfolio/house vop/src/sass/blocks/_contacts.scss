@@ -1,0 +1,96 @@
+.contacts {
+    min-height: 560px;
+    background: url('../img/formfon.jpg') center center/cover no-repeat;
+    padding: 180px 0 60px 0;
+    &__blocks {
+        display: grid;
+        grid-template: 135px / repeat(2, 540px);
+        margin: 0 auto;
+        column-gap: 20px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__block {
+        &-text {
+            font-family: Raleway;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            color: #FFFFFF;
+        }
+    }
+    &__form {
+        display: grid;
+        grid-template: repeat(2, 50px) / repeat(2, 255px);
+        gap: 30px;
+    }
+    &__input {
+        input {
+            width: 100%;
+            height: 100%;
+            padding: 0 20px;
+            font-family: Raleway;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 27px;
+            background-color: rgba(190, 190, 190, 0.2);
+            color: #FFFFFF;
+            text-align: center;
+            outline: none;
+            border: none;
+            &::-webkit-input-placeholder {
+                color: #bebebe;
+            }
+            &::-moz-placeholder {
+                color: #bebebe;
+            }
+            &:-moz-placeholder {
+                color: #bebebe;
+            }
+            &:-ms-input-placeholder {
+                color: #bebebe;
+            }
+        }
+    }
+    &__policy {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        a,
+        span {
+            display: block;
+            font-family: Raleway;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 16px;
+            text-align: center;
+            color: #E7E7E7;
+        }
+    }
+    &__button {
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 27px;
+        text-align: center;
+        color: #FFFFFF;
+        background-color: $main-color;
+        border: none;
+        &:hover {
+            border: none;
+            font-size: 17px;
+            box-shadow: 2px 2px 10px $main-color;
+        }
+        &:focus {
+            border: none;
+            outline: none;
+        }
+        &:active {
+            border: none;
+            box-shadow: 3px 3px 20px $main-color;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.about {
+    background-color: #242B33;
+    min-height: 350px;
+    padding: 40px 0;
+    &__blocks {
+        display: flex;
+        width: 800px;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+    }
+    &__block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        &-text {
+            width: 200px;
+            margin-top: 40px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 27px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+@import 'libs/bootstrap-reboot.min';
+@import'base/variables';
+// @import url('http://fonts.cdnfonts.com/css/post-no-bills-jaffna');
+@font-face {
+    font-family: 'Post No Bills Jaffna SemiBold';
+    src: local('Post No Bills Jaffna SemiBold'), url('../fonts/Post\ No\ Bills\ Jaffna\ SemiBold.ttf') format('ttf');
+    font-weight: 600;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+@import 'blocks/scroll';
+@import 'blocks/header';
+@import 'blocks/about';
+@import 'blocks/title';
+@import 'blocks/flat';
+@import 'blocks/contacts';
+@import 'blocks/video';
+@import 'blocks/maps';
+@import 'blocks/forma';
+@import 'blocks/footer';
+@import 'blocks/flats';
+@import 'blocks/media'

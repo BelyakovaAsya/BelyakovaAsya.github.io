@@ -1,0 +1,99 @@
+.headers {
+    position: relative;
+    min-height: 840px;
+    background: url('../img/Rectangle.jpg') center center/cover no-repeat;
+    padding: 40px 0;
+    z-index: 3;
+}
+
+.header {
+    &__logo {
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__center {
+        margin: 0 auto;
+        margin-top: 160px;
+        width: 556px;
+        height: 109px;
+        display: block;
+        &-title {
+            font-family: Playfair Display;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 64px;
+            text-align: center;
+            color: $main-color;
+        }
+    }
+    &__address {
+        display: flex;
+        justify-content: space-between;
+        width: 535px;
+        margin: 340px auto;
+        a {
+            font-family: Raleway;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 21px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+    }
+    &__mouse {
+        img {
+            display: block;
+            margin: 0 auto;
+            margin-top: 200px;
+        }
+    }
+}
+
+.menu {
+    display: flex;
+    width: 541px;
+    justify-content: space-between;
+    li {
+        list-style-type: none;
+    }
+    &_link {
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+        &:hover {
+            text-decoration: none;
+            color: #fff
+        }
+    }
+}
+
+.header__logo-one {
+    font-family: 'Post No Bills Jaffna SemiBold', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 54px;
+    color: #FFFFFF;
+}
+
+.header__logo-two {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.12em;
+    color: #FFFFFF;
+}

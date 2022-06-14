@@ -1,0 +1,38 @@
+.to_top {
+    font-size: 11px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    min-width: 39px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    &:hover {
+        text-decoration: none;
+        color: #fff;
+    }
+}
+
+.to_top_icon {
+    border: none;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    display: block;
+    margin: 0 auto 6px;
+    position: relative;
+    background: $main-color;
+}
+
+.up {
+    position: absolute;
+    display: block;
+    z-index: 2;
+}
+
+.hamburger_active {
+    display: fixed;
+    right: 20px;
+    top: 20px;
+}
