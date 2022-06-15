@@ -1,0 +1,784 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+        padding: 0 10px;
+    }
+    .title {
+        font-size: 38px;
+    }
+    .main {
+        &__block {
+            padding: 34px;
+            &-button {
+                padding: 12px;
+                width: 190px;
+                height: 50px;
+            }
+        }
+        &__title {
+            font-size: 58px;
+        }
+    }
+    .about {
+        &__img {
+            &-big {
+                width: 450px;
+                height: 550px;
+            }
+            &-small {
+                bottom: -34px;
+                right: -25px;
+            }
+        }
+        &__text {
+            &-title {
+                &-three {
+                    font-size: 16px;
+                }
+            }
+            &-h3 {
+                font-size: 23px;
+            }
+            &-button {
+                width: 150px;
+                height: 50px;
+            }
+        }
+        &__block {
+            gap: 50px;
+        }
+    }
+    .look {
+        min-height: 700px;
+        padding: 35px 0;
+        &__img {
+            width: 450px;
+            height: 510px;
+        }
+        &__block {
+            gap: 30px;
+            &-arr {
+                padding: 12px;
+            }
+            &-h3 {
+                font-size: 16px;
+            }
+        }
+    }
+    .country {
+        min-height: 984px;
+        padding: 75px 0;
+        &__block {
+            grid-template: repeat(3, 255px)/repeat(2, 370px);
+            grid-auto-rows: 370px;
+            gap: 50px;
+        }
+    }
+    .read {
+        min-height: 550px;
+        &__img {
+            width: 500px;
+            height: 500px;
+        }
+        &__block {
+            padding: 20px;
+        }
+        &__blocks {
+            padding-left: 70px;
+            gap: 30px;
+        }
+        &__button {
+            width: 164px;
+            height: 48px;
+        }
+    }
+    .people {
+        min-height: 650px;
+        padding: 50px 0;
+        &__block {
+            &-foto {
+                width: 125px;
+                height: 125px;
+            }
+            &-text {
+                font-size: 13px;
+            }
+        }
+    }
+    .subscribe {
+        min-height: 250px;
+        padding: 50px 0;
+        &__title {
+            font-size: 30px;
+        }
+        &__block {
+            &-form {
+                width: 100%;
+                padding: 30px 100px;
+            }
+        }
+        &__form {
+            margin-top: 20px;
+            height: 50px;
+            input {
+                height: 32px;
+            }
+        }
+        &__button {
+            min-width: 110px;
+            height: 35px;
+        }
+    }
+    footer {
+        min-height: 300px;
+        padding: 40px;
+    }
+    .footer {
+        padding: 0 15px;
+    }
+    .footer__text,
+    .footer__text-big {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+        padding: 0;
+    }
+    nav {
+        min-height: 100px;
+        padding-top: 16px;
+    }
+    .menu {
+        &__logo {
+            margin-right: 0;
+        }
+        &__nav {
+            font-size: 16px;
+        }
+        &__logo {
+            flex-direction: column;
+        }
+        &__text {
+            font-size: 12px;
+        }
+        .button {
+            width: 80px;
+            height: 28px;
+            margin-top: 20px;
+        }
+    }
+    .main {
+        &__text {
+            width: auto;
+            font-size: 18px;
+        }
+        &__title {
+            font-size: 50px;
+        }
+        &__block {
+            height: 90px;
+            padding: 16px;
+            &-button {
+                width: 140px;
+                height: 39px;
+                font-size: 18px;
+                line-height: 17px;
+            }
+        }
+    }
+    .dropbtn {
+        padding: 4px;
+    }
+    .title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .about {
+        min-height: 650px;
+        padding: 80px 0;
+        &__block {
+            gap: 30px;
+            padding: 0;
+        }
+        &__img {
+            &-big {
+                width: 360px;
+                height: 480px;
+            }
+            &-small {
+                bottom: -24px;
+                right: -15px;
+            }
+        }
+        &__text {
+            &-button {
+                width: 135px;
+                height: 42px;
+                font-size: 16px;
+            }
+            img {
+                width: 46px;
+                height: 46px;
+            }
+            &-done {
+                margin-top: 10px;
+            }
+            &-h3 {
+                font-size: 18px;
+            }
+            &-title {
+                &-three {
+                    font-size: 14px;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+    .look {
+        min-height: 530px;
+        &__img {
+            width: 360px;
+            height: 460px;
+        }
+        &__block {
+            margin-top: 20px;
+            height: 460px;
+            padding: 0;
+            gap: 18px;
+            &-h3 {
+                font-size: 15px;
+            }
+            &-about {
+                font-size: 12px;
+            }
+            &-arr {
+                gap: 15px;
+                padding: 8px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .country {
+        padding: 50px 0;
+        &__block {
+            grid-template: repeat(3, 230px)/repeat(2, 330px);
+            grid-auto-rows: 340px;
+            gap: 30px;
+        }
+    }
+    .read {
+        min-height: 480px;
+        &__require {
+            height: 480px;
+        }
+        &__title {
+            margin-top: 20px;
+        }
+        &__text {
+            font-size: 15px;
+            line-height: 21px;
+        }
+        &__block {
+            padding: 0;
+        }
+        &__blocks {
+            padding-left: 40px;
+            gap: 20px;
+        }
+        &__img {
+            width: 420px;
+            height: 420px;
+        }
+    }
+    .people {
+        min-height: 450px;
+        padding: 40px 0;
+        &__block {
+            margin-top: 90px;
+            padding: 65px 20px 22px 20px;
+            &-img {
+                margin: 0;
+            }
+            &-foto {
+                width: 105px;
+                height: 105px;
+                margin: 0;
+                top: -60px;
+            }
+        }
+        &__blocks {
+            gap: 22px;
+        }
+    }
+    .subscribe {
+        min-height: 230px;
+        padding: 25px 0;
+        &__button {
+            min-width: 82px;
+            height: 33px;
+            font-size: 16px;
+        }
+        &__form {
+            input {
+                width: 76%;
+            }
+        }
+    }
+    footer {
+        min-height: 220px;
+        padding: 30px;
+    }
+    .secret {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .up {
+        display: none;
+    }
+    .container {
+        max-width: 540px;
+    }
+    nav {
+        position: fixed;
+        width: 100%;
+        min-height: 51px;
+        padding-top: 0;
+        background-color: #222;
+        z-index: 3;
+    }
+    .menu__logo,
+    .menu .button {
+        display: none;
+    }
+    .menu__nav {
+        font-size: 22px;
+    }
+    .menu__arr {
+        position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu {
+        position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        top: 0;
+        left: -100%;
+        width: 50%;
+        height: 100vh;
+        padding: 20px 15px;
+        background-color: rgba($color: #fff, $alpha: 0.95);
+        transition: 0.6s all;
+        z-index: 2;
+        &_active {
+            left: 0;
+        }
+        &_items {
+            padding-right: 0;
+            border: none;
+            margin-top: 15px;
+        }
+        &_link {
+            font-size: 22px;
+        }
+    }
+    .hamburger {
+        display: block;
+        position: fixed;
+        transform: translateY(-50%);
+        width: 26px;
+        height: 12px;
+        right: 18px;
+        top: 25px;
+        span {
+            display: block;
+            height: 2px;
+            width: 100%;
+            background-color: #fff;
+            margin-bottom: 4px;
+            transition: 0.5s all;
+        }
+    }
+    .hamburger_active span {
+        margin-bottom: -2px;
+    }
+    .hamburger_active span:nth-child(1) {
+        transform: translateY(3px) rotate(-45deg);
+    }
+    .hamburger_active span:nth-child(2) {
+        display: none;
+    }
+    .hamburger_active span:nth-child(3) {
+        transform: translateY(3px) rotate(45deg);
+    }
+    .main {
+        min-height: 500px;
+        padding: 50px 45px;
+        &__title {
+            font-size: 44px;
+            margin-top: 36px;
+        }
+        &__block {
+            &-button {
+                width: 120px;
+                height: 35px;
+                font-size: 16px;
+                line-height: 12px;
+            }
+        }
+    }
+    .dropdown-content {
+        font-size: 14px;
+    }
+    .title {
+        font-size: 26px;
+        line-height: 32px;
+    }
+    .about {
+        min-height: 450px;
+        padding: 50px 0;
+        &__img {
+            &-big {
+                width: 250px;
+                height: 380px;
+            }
+            &-small {
+                width: 160px;
+                height: 110px;
+                bottom: -25px;
+                right: -14px;
+            }
+        }
+        &__text {
+            &-div {
+                font-size: 12px;
+            }
+            &-button {
+                margin-top: 15px;
+            }
+            img {
+                width: 42px;
+                height: 42px;
+            }
+            &-done {
+                margin-top: 22px;
+            }
+            &-h3 {
+                font-size: 16px;
+            }
+            &-title {
+                &-three {
+                    display: none;
+                }
+                &-two {
+                    margin: 10px 0 0 0;
+                }
+                &-one {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .look {
+        min-height: 840px;
+        padding: 30px 65px;
+        &__block {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .country {
+        min-height: 850px;
+        &__block {
+            grid-template: repeat(3, 200px)/repeat(2, 250px);
+            grid-auto-rows: 340px;
+            gap: 30px;
+        }
+    }
+    .title_country {
+        width: 122px;
+        height: 44px;
+        bottom: 26px;
+        right: 66px;
+        padding: 12px 25px;
+        font-size: 20px;
+        line-height: 17px;
+    }
+    .bottom {
+        padding: 13px 3px;
+    }
+    .india {
+        padding: 13px 36px;
+    }
+    .read {
+        min-height: 480px;
+        &__require {
+            height: 480px;
+        }
+        &__button {
+            width: 138px;
+            height: 40px;
+            font-size: 16px;
+            margin-top: 28px;
+        }
+        &__img {
+            width: 310px;
+            height: 365px;
+        }
+        &__blocks {
+            padding-left: 30px;
+        }
+        &__text {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+    .subscribe {
+        &__block {
+            &-form {
+                padding: 22px 25px;
+            }
+        }
+        &__title {
+            font-size: 26px;
+            line-height: 33px;
+        }
+        &__button {
+            min-width: 82px;
+            height: 33px;
+            font-size: 16px;
+        }
+    }
+    .button-menu {
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    .hamburger {
+        right: 15px;
+        top: 25px;
+    }
+    .title {
+        font-size: 22px;
+        line-height: 29px;
+    }
+    .dropdown-content {
+        font-size: 10px;
+    }
+    .dropbtn {
+        font-size: 12px;
+    }
+    .menu {
+        &__nav {
+            font-size: 16px;
+        }
+    }
+    .main {
+        padding: 40px 5px;
+        &__title {
+            font-size: 29px;
+            line-height: 42px;
+        }
+        &__text {
+            font-size: 16px;
+        }
+        &__block {
+            height: 120px;
+            padding: 6px;
+            &-search {
+                margin-bottom: 32px;
+            }
+            &-button {
+                display: none;
+                &-secret {
+                    margin-top: 20px;
+                    display: block;
+                    width: 160px;
+                    height: 34px;
+                    font-size: 14px;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+    .button-search {
+        font-size: 18px;
+        width: 110px;
+        height: 32px;
+    }
+    .web__search {
+        font-size: 17px;
+        padding: 0 130px 0 60px;
+        height: 51px;
+    }
+    .icon-search {
+        width: 33px;
+        height: 33px;
+    }
+    .about {
+        min-height: 650px;
+        padding: 20px 0;
+        &__img {
+            display: none;
+            &-big {
+                display: block;
+                margin: 0 auto;
+                width: 80%;
+                height: 164px;
+                margin-top: 20px;
+            }
+            &-small {
+                width: 123px;
+                height: 88px;
+                bottom: -38px;
+                right: 10px;
+            }
+            &-secret {
+                display: block;
+                margin-top: 30px;
+                position: relative;
+            }
+        }
+        &__text {
+            &-button {
+                margin-top: 32px;
+            }
+        }
+    }
+    .look {
+        min-height: 935px;
+        padding: 20px 0;
+        &__img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .country {
+        min-height: 1000px;
+        padding: 25px;
+        &__text {
+            font-size: 16px;
+        }
+        &__block {
+            grid-template-rows: repeat(5, 200px);
+            grid-template-columns: 250px;
+            grid-auto-rows: 250px;
+            gap: 20px;
+        }
+    }
+    .read {
+        min-height: 360px;
+        &__require {
+            height: 360px;
+        }
+        &__block {
+            &-img {
+                display: none;
+            }
+        }
+        &__blocks {
+            padding: 0 20px;
+        }
+    }
+    .vertical {
+        grid-row: 1 / 1;
+        grid-column: 1 / 1;
+    }
+    .people {
+        min-height: 1050px;
+        &__block {
+            margin-top: 70px;
+            padding: 55px 10px 22px 10px;
+            width: 100%;
+            &-text {
+                padding: 0 5px;
+            }
+            &-foto {
+                width: 95px;
+                height: 95px;
+                top: -60px;
+            }
+        }
+        &__text {
+            font-size: 16px;
+        }
+        &__blocks {
+            flex-direction: column;
+        }
+    }
+    .subscribe {
+        min-height: 170px;
+        padding: 0;
+        &__title {
+            font-size: 20px;
+        }
+        &__block {
+            padding: 20px;
+            input {
+                height: 23px;
+                font-size: 11px;
+                width: 65%;
+            }
+            &-form {
+                padding: 16px 21px;
+            }
+        }
+        &__button {
+            min-width: 60px;
+            height: 28px;
+            font-size: 12px;
+        }
+        &__form {
+            padding: 6px 6px 6px 10px;
+            margin-top: 10px;
+            height: 41px;
+        }
+    }
+    footer {
+        min-height: 310px;
+        padding: 20px 0;
+    }
+    .footer {
+        justify-content: space-around;
+        &__block {
+            gap: 5px;
+            margin-top: 10px;
+        }
+        &__blocks {
+            gap: 5px;
+            &-secret {
+                display: flex;
+                justify-content: space-around;
+                right: 50%;
+                margin: 20px 15px;
+                a {
+                    display: block;
+                    color: #555555;
+                    &:hover {
+                        text-decoration: none;
+                        color: $main-color;
+                    }
+                }
+            }
+        }
+        &__title {
+            font-size: 21px;
+        }
+    }
+    .secrets {
+        display: none;
+    }
+}

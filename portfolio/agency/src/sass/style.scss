@@ -1,0 +1,34 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'base/variables';
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Rubik, sans-serif;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 61px;
+    color: #222;
+}
+
+@import 'blocks/menu';
+@import 'blocks/main';
+@import 'blocks/about';
+@import 'blocks/look';
+@import 'blocks/country';
+@import 'blocks/read';
+@import 'blocks/people';
+@import 'blocks/subscribe';
+@import 'blocks/footer';
+@import 'blocks/button';
+@import 'blocks/scroll';
+@import 'blocks/main_list';
+@import 'blocks/media'
