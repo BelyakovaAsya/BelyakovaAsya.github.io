@@ -1,0 +1,37 @@
+@import'variables';
+@import'_animations';
+* {
+    font-family: 'Museo Sans Cyrl', sans-serif;
+}
+
+.container {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+a {
+    &:hover {
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+#svg {
+    color: #fff !important;
+    fill: #fff !important;
+}
+
+@import'_promo';
+@import'_header';
+@import'_buttons';
+@import'_advantages';
+@import'_titles';
+@import'_consultation';
+@import'_forms';
+@import'_carousel';
+@import'_catalog';
+@import'_feed';
+@import'_footer';
+@import'_modal';
+@import'_pageup';
+@import'_media'

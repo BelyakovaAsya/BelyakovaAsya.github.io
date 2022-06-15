@@ -1,0 +1,30 @@
+.consultation {
+    min-height: 680px;
+    padding: 100px 0 92px 0;
+    position: relative;
+    &::after {
+        content: "";
+        background: url('../img/bg-big2.jpg') center (center/cover) no-repeat;
+        opacity: 0.85;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+    }
+    &__descr {
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .error {
+        border: 1px solid blue;
+    }
+    label.error {
+        color: #fff;
+        border: none;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}
