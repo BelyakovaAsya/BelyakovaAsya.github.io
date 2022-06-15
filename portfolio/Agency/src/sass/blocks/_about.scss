@@ -1,0 +1,78 @@
+.about {
+    min-height: 810px;
+    padding: 100px 0;
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10px;
+        gap: 80px;
+    }
+    &__img {
+        width: 532px;
+        position: relative;
+        &-small {
+            position: absolute;
+            bottom: -45px;
+            right: -38px;
+        }
+        &-secret {
+            display: none;
+        }
+    }
+    &__text {
+        width: 100%;
+        &-title {
+            &-one {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 27px;
+                color: #02012B;
+            }
+            &-two {
+                margin-top: 20px;
+            }
+            &-three {
+                display: block;
+                margin-top: 24px;
+                width: 100%;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 27px;
+                color: #555555;
+            }
+        }
+        &-done {
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+        }
+        &-title {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 28px;
+            color: #222222;
+        }
+        &-h3 {
+            margin-top: 24px;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 28px;
+            color: #222222;
+        }
+        &-div {
+            margin-top: 16px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #555555;
+        }
+        &-button {
+            margin-top: 40px;
+            width: 169px;
+            height: 56px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 18px;
+        }
+    }
+}

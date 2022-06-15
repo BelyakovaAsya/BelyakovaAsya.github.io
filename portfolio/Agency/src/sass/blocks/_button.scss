@@ -1,0 +1,46 @@
+.button {
+    background-color: $main-color;
+    border-radius: 10px;
+    border: none;
+    color: #FFFFFF;
+    &:hover {
+        box-shadow: 0 0 5px #19BCE4;
+        border: #19BCE4;
+        background-color: #fff;
+        color: $main-color;
+    }
+    &:active {
+        border: #19BCE4;
+        outline: none;
+        transform: translateY(1px);
+    }
+    &:focus {
+        border: #19BCE4;
+        outline: none;
+    }
+    &-menu {
+        background-color: $main-color;
+        border-radius: 10px;
+        border: none;
+        color: #FFFFFF;
+        display: none;
+        min-width: 98px;
+        height: 34px;
+        margin-top: 100px;
+        &:hover {
+            box-shadow: 0 0 5px #19BCE4;
+            border: #19BCE4;
+            background-color: #fff;
+            color: $main-color;
+        }
+        &:active {
+            border: #19BCE4;
+            outline: none;
+            transform: translateY(1px);
+        }
+        &:focus {
+            border: #19BCE4;
+            outline: none;
+        }
+    }
+}

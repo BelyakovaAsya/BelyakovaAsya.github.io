@@ -1,0 +1,32 @@
+.look {
+    min-height: 850px;
+    background-color: #F8FDFE;
+    padding: 75px 0;
+    &__block {
+        height: 560px;
+        padding: 0 10px;
+        margin-top: 68px;
+        display: flex;
+        gap: 50px;
+        &-arr {
+            display: flex;
+            justify-content: space-between;
+            gap: 36px;
+            padding: 18px;
+            margin-bottom: 16px;
+            background-color: #fff;
+        }
+        &-about {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: #555555;
+        }
+        &-h3 {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            color: #222222;
+        }
+    }
+}
