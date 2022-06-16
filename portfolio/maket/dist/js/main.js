@@ -53,6 +53,7 @@ $(function() {
         ]
     });
     $('.article-slider__box').slick({
+        autoplay: true,
         prevArrow: '<button type"button" class="slick-prev article-slider__arrowleft"><img src="icons/arrow-left.svg" alt="arrow-left"></button>',
         nextArrow: '<button type"button" class="slick-prev article-slider__arrowright"><img src="icons/arrow-right.svg" alt="arrow-right"></button>'
     });
