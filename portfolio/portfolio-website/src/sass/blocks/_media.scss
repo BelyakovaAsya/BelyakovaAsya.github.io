@@ -31,7 +31,7 @@
     .skills {
         &__wrapper {
             grid-template-columns: repeat(auto-fit, 270px);
-            justify-content: space-between;
+            justify-content: space-around;
         }
         &__lines {
             grid-template: repeat(2, minmax(70px, auto)) / repeat(auto-fit, 350px);
@@ -141,6 +141,9 @@
         &_fz48 {
             font-size: 28px;
         }
+    }
+    .hamburger {
+        position: fixed;
     }
     .menu__close {
         top: 11px;
@@ -285,6 +288,9 @@
         &__wrapper {
             padding: 10px 10px 0 10px;
             grid-template-columns: 1fr;
+        }
+        &__column {
+            padding: 0 18px;
         }
     }
     .skills {
