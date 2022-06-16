@@ -104,11 +104,12 @@
             grid-template-rows: repeat(2, 280px);
             grid-auto-rows: 280px;
             justify-content: center;
-            .hop {
+            gap: 10px;
+            .works-one {
                 grid-row: unset;
                 grid-column: unset;
             }
-            .hip {
+            .works-four {
                 grid-row: unset;
                 grid-column: unset;
             }
@@ -221,7 +222,6 @@
             grid-template-columns: repeat(2, 245px);
             grid-template-rows: repeat(2, 245px);
             grid-auto-rows: 230px;
-            gap: 10px;
         }
     }
     .price {
