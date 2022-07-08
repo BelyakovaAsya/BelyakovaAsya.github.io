@@ -1,0 +1,30 @@
+.services {
+    background: url('../../img/barber11.jpg') center center/cover no-repeat;
+    min-height: 800px;
+    padding: 40px 0;
+    &_line {
+        width: 560px;
+        display: flex;
+        justify-content: space-between;
+        margin: 16px 0;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif !important;
+        font-size: 22px;
+        span {
+            flex: 1 0;
+            border-bottom: 1px dotted #000;
+            height: 18px;
+            margin: 0 5px;
+        }
+    }
+    &_title {
+        margin-bottom: 20px;
+    }
+    &_beard {
+        margin-top: 72px;
+        margin-left: 130px;
+    }
+    &_button {
+        margin-top: 40px;
+    }
+}

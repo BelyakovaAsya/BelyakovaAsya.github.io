@@ -1,0 +1,194 @@
+@media (max-width:1200px) {
+    .container {
+        max-width: 960px;
+        padding: 0 10px;
+    }
+    .promo {
+        &_title {
+            font-size: 65px;
+        }
+        &_block {
+            gap: 0;
+        }
+        &_social {
+            &-link img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+    a.button {
+        letter-spacing: 1px;
+        font-size: 23px;
+    }
+    .services {
+        &_line {
+            width: 488px;
+        }
+    }
+    .contacts {
+        padding: 50px 0;
+        &_block iframe {
+            width: 540px;
+        }
+        &_item {
+            text-align: center;
+        }
+        &_subtitle {
+            font-size: 22px;
+        }
+        &_addr,
+        &_tel,
+        &_worktime {
+            font-size: 20px;
+        }
+    }
+    .title {
+        font-size: 50px;
+    }
+    .footer {
+        &_block {
+            gap: 30px
+        }
+        &_social {
+            &-link img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width:992px) {
+    .container {
+        max-width: 720px;
+        padding: 0;
+    }
+    .menu {
+        &__list {
+            padding: 0 !important;
+            &-link a {
+                font-size: 18px;
+            }
+            &-link::before {
+                margin-right: 12px;
+            }
+            &-linl::after {
+                margin-left: 12px;
+            }
+        }
+    }
+    .promo {
+        &_contacts {
+            align-items: flex-start;
+            &-link {
+                font-size: 26px;
+            }
+        }
+        &_logo {
+            width: 160px;
+            height: 160px;
+        }
+        &_info {
+            width: 500px;
+        }
+        &_block {
+            gap: 20px;
+        }
+        &_title {
+            font-size: 50px;
+        }
+    }
+    a.button {
+        width: 57%;
+    }
+    .barbers {
+        min-height: 752px;
+    }
+    .footer {
+        &_block {
+            margin-left: 180px;
+        }
+        &_social {
+            gap: 28px;
+        }
+    }
+    .services_line {
+        width: 376px;
+    }
+    .contacts {
+        padding: 50px 0;
+        &_block iframe {
+            width: 380px;
+            height: 420px;
+        }
+        &_items {
+            align-items: center;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .container {
+        max-width: 540px;
+    }
+    .menu {
+        position: fixed;
+        margin: 0;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 50vh;
+        padding: 20px;
+        background-color: rgba($color: #000000, $alpha: 0.8);
+        transition: 0.6s all;
+        z-index: 2;
+        &__list {
+            flex-direction: column;
+            &-link a {
+                font-size: 22px;
+                letter-spacing: 2px;
+            }
+        }
+        &_active {
+            left: 0;
+        }
+    }
+    .hamburger {
+        display: block;
+        position: fixed;
+        transform: translateY(-50%);
+        width: 26px;
+        height: 12px;
+        right: 30px;
+        top: 42px;
+        z-index: 5;
+        span {
+            display: block;
+            height: 2px;
+            width: 100%;
+            background-color: #FFFFFF;
+            margin-bottom: 4px;
+            transition: 0.5s all;
+        }
+    }
+    .hamburger_active span {
+        margin-bottom: -2px;
+    }
+    .hamburger_active span:nth-child(1) {
+        transform: translateY(3px) rotate(-45deg);
+    }
+    .hamburger_active span:nth-child(2) {
+        display: none;
+    }
+    .hamburger_active span:nth-child(3) {
+        transform: translateY(3px) rotate(45deg);
+    }
+}
+
+@media (max-width:576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+}
